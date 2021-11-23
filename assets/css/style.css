@@ -1,0 +1,27 @@
+/* Styling for formate quiz */
+* {
+  box-sizing: border-box;
+}
+:root {
+  --deeper: #1b1464;
+  --deep: #5758bb;
+  --medium: #9980fa;
+}
+body {
+  display: flex;
+  background-color: var(--deep);
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: var(--deeper);
+}
+/*styling to get quiz itself*/
+.quizContainer {
+  align-content: center;
+  justify-content: center;
+  background-color: var(--medium);
+  border-radius: 32px;
+  box-shadow: 0 0 10px 2px black;
+  height: 75vh;
+}
+.
