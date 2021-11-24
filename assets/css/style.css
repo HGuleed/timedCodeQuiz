@@ -1,14 +1,16 @@
 /* Styling for formate quiz */
 * {
+  margin: 10px;
   box-sizing: border-box;
 }
-:root {
+/* :root {
   --deeper: #1b1464;
   --deep: #5758bb;
   --medium: #9980fa;
-}
+} */
 body {
   display: flex;
+  flex-direction: column;
   background-color: var(--deep);
   align-items: center;
   justify-content: center;
@@ -16,12 +18,28 @@ body {
   color: var(--deeper);
 }
 /*styling to get quiz itself*/
+header {
+  flex-basis: 100%;
+}
 .quizContainer {
+  border: 3px solid black;
   align-content: center;
   justify-content: center;
   background-color: var(--medium);
-  border-radius: 32px;
-  box-shadow: 0 0 10px 2px black;
+  /* border-radius: 32px;
+  box-shadow: 0 0 10px 2px black; */
   height: 75vh;
 }
-.
+.quiz {
+  border: 3px solid blue;
+}
+
+.quiz h2 {
+  border: 3px solid olivedrab;
+}
+.quiz ul {
+  border: 3px solid paleturquoise;
+}
+.button {
+  border: 3px solid plum;
+}
