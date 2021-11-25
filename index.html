@@ -18,22 +18,26 @@
 
       <div class="questionaireBox">
         <div class="quiz">
-            <h1>Timed Code Quiz</h1>
-            <p>
+            <h1 id="title">Timed Code Quiz</h1>
+            <p  id="intro">
               Welcome, if you would like to test your knowledge on coding with a timed
               quiz click the start button below.
             </p>
             <h2 id= "quizQuestions" class="quizQuestions"> </h2>
             <ul id= "quizOptions" class="quizOptions">
+              <li id="A" class="answers"></li>
+              <li id="B" class="answers"></li>
+              <li id="C" class="answers"></li>
+              <li id="D" class="answers"></li>
                 
             </ul>
         </div>
-        <div class="button">
+        <div id="startBtn" class="button">
             <button id="generate" class="btn">Start Quiz!</button>
         </div>
       </div>
     </main>
-
+    <script src= "./assets/js/questions.js"></script>
     <script src = "./assets/js/script.js"></script>
     </script>
   </body>
