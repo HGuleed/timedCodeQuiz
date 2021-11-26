@@ -1,27 +1,28 @@
-var index = 0;
-var questionIndex = 0;
-var currentTime = 75000;
-var currentScore = 0;
+const questionIndex = 0;
+const currentTime = 75000;
+const currentScore = 0;
 var currentQuestion = questionArray[index].question;
-var 
+var startBtn = document.getElementById("startBtn");
+var opAll = document.querySelector("ul");
+var opA = document.querySelector("#A");
+var opB = document.querySelector("#B");
+var opC = document.querySelector("#C");
+var opD = document.querySelector("#D");
+var quizH1 = document.querySelector("h1");
+var quizIntro = document.querySelector("p");
+var quizQuestion = document.querySelector("h2");
+var questionOpt = document.querySelector("ul");
 
-function askQuestion() {
+function generatQuest() {
   debugger;
-  // var optionA = questionArray[index].optionsList[0];
-  // var optionB = questionArray[index].optionsList[1];
-  // var optionC = questionArray[index].optionsList[2];
-  // var optionD = questionArray[index].optionsList[3];
-  // var startButton = document.getElementById("startBtn");
-  // var options = document.createElement("li");
-  // var populateOp = document.createTextNode();
-  document.getElementById("title").textContent = "";
 
-  document.getElementById("intro").textContent = "";
+  quizH1.style.visibility = "hidden";
+  quizIntro.style.visibility = "hidden";
 
-  for (let i = index; i < questionArray.length; i++) {
-    document.getElementById("quizQuestions").textContent = currentQuestion;
-  }
-  console.log(currentQuestion);
+  // for (let i = 0; i < questionArray.length; i++) {
+  //   document.getElementById("quizQuestions").textContent = currentQuestion;
+  // }
+  // console.log(currentQuestion);
 }
 
 // function checksAnswer(event) {
@@ -35,9 +36,9 @@ function askQuestion() {
 
 // function
 
-function startQuiz() {
-  debugger;
-  askQuestion();
-  // initiateTimer();
-}
-document.getElementById("generate").addEventListener("mousedown", askQuestion);
+// function startQuiz() {
+//   debugger;
+//   askQuestion();
+//   // initiateTimer();
+// }
+document.getElementById("generate").addEventListener("mousedown", generatQuest);
