@@ -1,0 +1,59 @@
+/* Style for the entire page */
+* {
+  margin: 10px;
+  box-sizing: border-box;
+}
+/* Coloring for page */
+/* :root {
+  --deeper: #1b1464;
+  --deep: #5758bb;
+  --medium: #9980fa;
+  --wrong: red;
+} */
+/* Styling for the body */
+
+body {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--deep);
+  align-items: center;
+  justify-content: center;
+  color: var(--deeper);
+  height: 85vh;
+}
+header {
+  display: flex;
+  border: 5px solid brown;
+  width: 90vw;
+  justify-content: space-between;
+}
+
+/* Styling for the quiz */
+main {
+  border: 5px solid red;
+}
+.intro {
+  border: 5px solid green;
+}
+.quizQuestionaire {
+  border: 5px solid blue;
+}
+.quizTitle {
+  border: 5px solid orange;
+}
+.quizIntroduction {
+  border: 5px solid yellow;
+}
+.startButton {
+  border: 5px solid greenyellow;
+}
+.quizQuestion {
+  border: 5px solid indigo;
+}
+.quizAns {
+  border: 5px solid violet;
+}
+ul li {
+  border: 5px solid rebeccapurple;
+}

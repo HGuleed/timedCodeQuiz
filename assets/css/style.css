@@ -1,45 +1,101 @@
-/* Styling for formate quiz */
+/* Styling for formate body */
 * {
   margin: 10px;
   box-sizing: border-box;
 }
-/* :root {
+:root {
   --deeper: #1b1464;
   --deep: #5758bb;
   --medium: #9980fa;
-} */
+}
 body {
   display: flex;
   flex-direction: column;
   background-color: var(--deep);
   align-items: center;
   justify-content: center;
-  height: 100vh;
   color: var(--deeper);
 }
 /*styling to get quiz itself*/
+
 header {
+  display: flex;
+  border: 5px solid brown;
+  width: 100vw;
   flex-basis: 100%;
+  justify-content: space-between;
 }
-.quizContainer {
-  border: 3px solid black;
+header a {
+  display: ;
+  border: 5px solid green;
+  flex-basis: 15%;
+}
+header p {
+  display: flex;
+  border: 5px solid hotpink;
+  flex-basis: 8%;
+  justify-content: flex-end;
+}
+
+main {
+  display: flex;
+  border: 5px solid black;
   align-content: center;
   justify-content: center;
   background-color: var(--medium);
-  /* border-radius: 32px;
-  box-shadow: 0 0 10px 2px black; */
-  height: 75vh;
+  border-radius: 32px;
+  box-shadow: 0 0 10px 2px black;
+  height: 60vh;
+  width: 75vw;
+  align-items: center;
+}
+main p {
+  padding-top: 30px;
+  font: 24px;
 }
 .quiz {
-  border: 3px solid blue;
+  border: 5px solid blue;
 }
 
-.quiz h2 {
-  border: 3px solid olivedrab;
+main h1 {
+  display: flex;
+  border: 5px solid olivedrab;
+  justify-content: center;
 }
+main p {
+  display: flex;
+  border: 5px solid yellow;
+}
+/* .invisible {
+  visibility: hidden;
+} */
 .quiz ul {
-  border: 3px solid paleturquoise;
+  display: flex;
+  border: 5px solid paleturquoise;
+  flex-direction: column;
+}
+ul li {
+  border: 5px solid tomato;
+  flex: 50%;
+  list-style: none;
 }
 .button {
-  border: 3px solid plum;
+  display: flex;
+  border: 5px solid plum;
+  justify-content: center;
+}
+.btn {
+  padding: 15px;
+  background: blueviolet;
+  border-radius: 15px;
+  font-size: 18px;
+  transition-duration: 0.1s;
+  color: azure;
+}
+.btn:hover {
+  background: rgb(83, 14, 148);
+}
+
+#btnA1 #btnB1 #btnC1 #btnD1 {
+  background-color: #7912a1;
 }
