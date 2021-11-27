@@ -1,44 +1,71 @@
 const questionIndex = 0;
-const currentTime = 75000;
+const currentTime = 120000;
 const currentScore = 0;
-var currentQuestion = questionArray[index].question;
-var startBtn = document.getElementById("startBtn");
-var opAll = document.querySelector("ul");
-var opA = document.querySelector("#A");
-var opB = document.querySelector("#B");
-var opC = document.querySelector("#C");
-var opD = document.querySelector("#D");
-var quizH1 = document.querySelector("h1");
-var quizIntro = document.querySelector("p");
-var quizQuestion = document.querySelector("h2");
-var questionOpt = document.querySelector("ul");
 
-function generatQuest() {
-  debugger;
+let startButton = document.getElementById("startBtn");
+let timerSelector = document.getElementById("timer");
+let questionArr = questionArray;
 
-  quizH1.style.visibility = "hidden";
-  quizIntro.style.visibility = "hidden";
+let quizQuestion = document.getElementById("quizH1");
+let quizOptA = document.getElementById("questLiA");
+let quizOptB = document.getElementById("questLiB");
+let quizOptC = document.getElementById("questLiC");
+let quizOptD = document.getElementById("questLiD");
 
-  // for (let i = 0; i < questionArray.length; i++) {
-  //   document.getElementById("quizQuestions").textContent = currentQuestion;
-  // }
-  // console.log(currentQuestion);
+let currentQuestion = questionArr[questionIndex].question;
+let currentOptA = questionArr[questionIndex].optionsList[0];
+let currentOptB = questionArr[questionIndex].optionsList[1];
+let currentOptC = questionArr[questionIndex].optionsList[2];
+let currentOptD = questionArr[questionIndex].optionsList[3];
+let rightOpt = questionArr[questionIndex].answer;
+
+// Function removing intro and populating questions
+function generateQuestion() {
+  // debugger;
+  let introSection = document.getElementById("quizIntro");
+  let quizSection = document.getElementById("questionaire");
+
+  introSection.classList.add("hide");
+  quizSection.classList.remove("hide");
 }
 
-// function checksAnswer(event) {
-//   var rightAns= questionArray[index].answer;
+// Function to run through questions array
+function goThroughQuestion() {
+  for (let i = questionIndex; i < questionArray.length; i++) {
+    quizQuestion.textContent = currentQuestion;
 
+    quizOptA.textContent = currentOptA;
+    quizOptB.textContent = currentOptB;
+    quizOptC.textContent = currentOptC;
+    quizOptD.textContent = currentOptD;
+  }
+}
+
+// console.log(currentQuestion)
 // }
 
-// function initiateTimer() {
+// // Function to check if right answer selected
+// function rightAnswer() {
+//     if( rightOpt == true){
+//         let newScore = currentScore + 5;
+//         return
+//     } else {
+//        let newTime = currentTime - 10000;
+//        return
+//     }
 
 // }
+// timer function
+function timer() {
+  timerSelector.textContent = "Timer: " + newTime;
+}
 
-// function
+// function to initate quiz
+function startQuiz() {
+  generateQuestion();
 
-// function startQuiz() {
-//   debugger;
-//   askQuestion();
-//   // initiateTimer();
-// }
-document.getElementById("generate").addEventListener("mousedown", generatQuest);
+  // setInterval(timer, 120000);
+}
+
+// Event listener to activate start function
+startButton.onclick = startQuiz;

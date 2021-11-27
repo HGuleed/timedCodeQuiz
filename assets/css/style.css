@@ -1,101 +1,122 @@
-/* Styling for formate body */
+/* Style for the entire page */
 * {
-  margin: 10px;
+  margin: 3px;
+  padding: 0px;
   box-sizing: border-box;
 }
-:root {
+/* Coloring for page */
+/* :root {
   --deeper: #1b1464;
   --deep: #5758bb;
   --medium: #9980fa;
-}
+  --wrong: red;
+} */
+/* Styling for the body */
+
 body {
+  border: 5px solid black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: flex;
   flex-direction: column;
   background-color: var(--deep);
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   color: var(--deeper);
+  height: 85vh;
 }
-/*styling to get quiz itself*/
-
 header {
   display: flex;
   border: 5px solid brown;
-  width: 100vw;
-  flex-basis: 100%;
+  width: 97vw;
   justify-content: space-between;
 }
-header a {
-  display: ;
-  border: 5px solid green;
-  flex-basis: 15%;
-}
-header p {
-  display: flex;
-  border: 5px solid hotpink;
-  flex-basis: 8%;
-  justify-content: flex-end;
-}
 
+/* Styling for the whole quiz */
 main {
-  display: flex;
-  border: 5px solid black;
-  align-content: center;
-  justify-content: center;
-  background-color: var(--medium);
-  border-radius: 32px;
-  box-shadow: 0 0 10px 2px black;
+  border: 5px solid red;
   height: 60vh;
-  width: 75vw;
-  align-items: center;
-}
-main p {
-  padding-top: 30px;
-  font: 24px;
-}
-.quiz {
-  border: 5px solid blue;
-}
-
-main h1 {
-  display: flex;
-  border: 5px solid olivedrab;
-  justify-content: center;
-}
-main p {
-  display: flex;
-  border: 5px solid yellow;
-}
-/* .invisible {
-  visibility: hidden;
-} */
-.quiz ul {
-  display: flex;
-  border: 5px solid paleturquoise;
+  align-self: center;
   flex-direction: column;
 }
-ul li {
-  border: 5px solid tomato;
-  flex: 50%;
-  list-style: none;
+/* .invisibile {
+  visibility: hidden;
 }
-.button {
+.visible {
+  visibility: visible;
+} */
+/* Styling introduction */
+.intro {
+  margin: 5px;
+  border: 5px solid green;
+  height: 50vh;
+  width: 530px;
+  padding: 5px;
   display: flex;
-  border: 5px solid plum;
-  justify-content: center;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.btn {
+.quizTitle {
+  border: 5px solid orange;
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+}
+.quizIntroduction {
+  border: 5px solid yellow;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+.startButton {
+  border: 5px solid greenyellow;
   padding: 15px;
   background: blueviolet;
   border-radius: 15px;
   font-size: 18px;
   transition-duration: 0.1s;
   color: azure;
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.1s;
 }
-.btn:hover {
-  background: rgb(83, 14, 148);
+.startButton:hover {
+  background-color: #7912a1;
+}
+/* Styling for quiz questions */
+.quizQuestionaire {
+  border: 5px solid blue;
+  margin-top: 35px;
+  height: 50vh;
+  width: 700px;
+  padding: 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+.quizQuestion {
+  border: 5px solid indigo;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.quizAns {
+  border: 5px solid violet;
+  height: 20vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+ul li {
+  border: 5px solid rebeccapurple;
+  list-style: none;
+}
+.ansBtn {
+  border: 5px solid green;
 }
 
-#btnA1 #btnB1 #btnC1 #btnD1 {
-  background-color: #7912a1;
+.hide {
+  display: none;
 }
