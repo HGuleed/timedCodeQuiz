@@ -6,32 +6,34 @@ let startButton = document.getElementById("startBtn");
 let timerSelector = document.getElementById("timer");
 let questionArr = questionArray;
 
-let quizQuestion = document.getElementById("quizH1");
-let quizOptA = document.getElementById("questLiA");
-let quizOptB = document.getElementById("questLiB");
-let quizOptC = document.getElementById("questLiC");
-let quizOptD = document.getElementById("questLiD");
-
-let currentQuestion = questionArr[questionIndex].question;
-let currentOptA = questionArr[questionIndex].optionsList[0];
-let currentOptB = questionArr[questionIndex].optionsList[1];
-let currentOptC = questionArr[questionIndex].optionsList[2];
-let currentOptD = questionArr[questionIndex].optionsList[3];
-let rightOpt = questionArr[questionIndex].answer;
+let quizQuestion = document.getElementById("quizH2");
+let quizOptA = document.getElementById("ansLiA");
+let quizOptB = document.getElementById("ansLiB");
+let quizOptC = document.getElementById("ansLiC");
+let quizOptD = document.getElementById("ansLiD");
 
 // Function removing intro and populating questions
 function generateQuestion() {
-  // debugger;
   let introSection = document.getElementById("quizIntro");
   let quizSection = document.getElementById("questionaire");
 
   introSection.classList.add("hide");
   quizSection.classList.remove("hide");
+
+  goThroughQuestion();
 }
 
 // Function to run through questions array
 function goThroughQuestion() {
-  for (let i = questionIndex; i < questionArray.length; i++) {
+  debugger;
+  for (let i = 0; i < questionArr.length; i++) {
+    let currentQuestion = questionArr[i].question;
+    let currentOptA = questionArr[i].optionsList[0];
+    let currentOptB = questionArr[i].optionsList[1];
+    let currentOptC = questionArr[i].optionsList[2];
+    let currentOptD = questionArr[i].optionsList[3];
+    let rightOpt = questionArr[i].answer;
+
     quizQuestion.textContent = currentQuestion;
 
     quizOptA.textContent = currentOptA;
@@ -55,16 +57,17 @@ function goThroughQuestion() {
 //     }
 
 // }
-// timer function
+
 function timer() {
   timerSelector.textContent = "Timer: " + newTime;
 }
 
 // function to initate quiz
 function startQuiz() {
+  // debugger;
   generateQuestion();
 
-  // setInterval(timer, 120000);
+  setInterval(timer, 120000);
 }
 
 // Event listener to activate start function
