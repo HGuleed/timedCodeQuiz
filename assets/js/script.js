@@ -1,3 +1,6 @@
+let introSection = document.getElementById("quizIntro");
+let quizSection = document.getElementById("questionaire");
+
 const questionIndex = 0;
 const currentTime = 120000;
 const currentScore = 0;
@@ -11,17 +14,6 @@ let quizOptA = document.getElementById("ansLiA");
 let quizOptB = document.getElementById("ansLiB");
 let quizOptC = document.getElementById("ansLiC");
 let quizOptD = document.getElementById("ansLiD");
-
-// Function removing intro and populating questions
-function generateQuestion() {
-  let introSection = document.getElementById("quizIntro");
-  let quizSection = document.getElementById("questionaire");
-
-  introSection.classList.add("hide");
-  quizSection.classList.remove("hide");
-
-  goThroughQuestion();
-}
 
 // Function to run through questions array
 function goThroughQuestion() {
@@ -40,6 +32,7 @@ function goThroughQuestion() {
     quizOptB.textContent = currentOptB;
     quizOptC.textContent = currentOptC;
     quizOptD.textContent = currentOptD;
+    console.log(currentOptA);
   }
 }
 
@@ -60,14 +53,18 @@ function goThroughQuestion() {
 
 function timer() {
   timerSelector.textContent = "Timer: " + newTime;
+  set;
 }
 
 // function to initate quiz
 function startQuiz() {
   // debugger;
-  generateQuestion();
+  introSection.classList.add("hide");
+  quizSection.classList.remove("hide");
 
-  setInterval(timer, 120000);
+  goThroughQuestion();
+
+  timer();
 }
 
 // Event listener to activate start function
