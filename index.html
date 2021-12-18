@@ -10,7 +10,7 @@
   <body>
     <header>
       <a href="highScore.html">High Scores</a>
-      <span id="timer" class="timer">Time: 0 </span>
+      <p>Time: <span id="timer" class="timer"> </span></p>
     </header>
     <main>
       <div id="quizIntro" class="intro">
@@ -19,21 +19,33 @@
           Welcome, if you would like to test your knowledge on coding with a
           timed quiz click the start button below.
         </p>
-        <button id="startBtn" class="startButton">Star Quiz!</button>
+        <button id="startBtn" class="startButton">Start Quiz!</button>
       </div>
 
       <div id="questionaire" class="quizQuestionaire hide">
         <h2 id="quizH2" class="quizQuestion">Question Test</h2>
         <ul id="quizUL" class="quizAns">
           <li>
-            <button id="ansLiA" class="answer ansA"></button>
+            <button id="ansLiA" class="answer ansA" value="A"></button>
           </li>
-          <li><button id="ansLiB" class="answer ansB"></button></li>
-          <li><button id="ansLiC" class="answer ansC"></button></li>
-          <li><button id="ansLiD" class="answer ansD"></button></li>
+          <li>
+            <button id="ansLiB" class="answer ansB" value="B"></button>
+          </li>
+          <li>
+            <button id="ansLiC" class="answer ansC" value="C"></button>
+          </li>
+          <li>
+            <button id="ansLiD" class="answer ansD" value="D"></button>
+          </li>
         </ul>
       </div>
+      <div id="hScoreDisplay"></div>
     </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/questions.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>

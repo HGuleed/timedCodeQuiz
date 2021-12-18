@@ -7,22 +7,22 @@ var questionArray = [
       "C)  Search Engine Optimization",
       "D)  Software Engineer Operator",
     ],
-    answer: "C)  Search Engine Optimization",
+    answer: "C",
   },
   {
     question: "What is the order for labeling margin and padding?",
     optionsList: ["A)  LBRT", "B)  TRBL", "C)  TBRL", "D)  BTLR"],
-    answer: "B)  TRBL",
+    answer: "B",
   },
   {
     question: "Which one is NOT a content model?",
     optionsList: ["A)  heading", "B)  sectioning", "C)  iframe", "D)  flow"],
-    answer: "C)  iframe",
+    answer: "C",
   },
   {
     question: "What is used to select an element and apply style to it?",
     optionsList: ["A)  selector", "B)  class", "C)  media query", "D)  inline"],
-    answer: "A)  selector",
+    answer: "A",
   },
   {
     question: "How does z-index affect a web page?",
@@ -32,7 +32,7 @@ var questionArray = [
       "C)  let's you control the cross axis",
       "D)  allows you to control the depth of objects",
     ],
-    answer: "D)  allows you to control the depth of objects",
+    answer: "D",
   },
   {
     question: "What is the difference between an element and and attribute?",
@@ -42,8 +42,7 @@ var questionArray = [
       "C)  element are found in HTML, attributes are found in CSS",
       "D)  attributes are found in HTML, element are found in CSS",
     ],
-    answer:
-      "A)  an element is any tag on your page, an attribute provides details about an element",
+    answer: "A",
   },
   {
     question: "What are the 3 main breakpoints?",
@@ -53,7 +52,7 @@ var questionArray = [
       "C)  575px, 768px, 980px",
       "D)  500px, 700px, 900px",
     ],
-    answer: "C)  575px, 768px, 980px",
+    answer: "C",
   },
   {
     question: "What is a code block?",
@@ -63,7 +62,7 @@ var questionArray = [
       "C)  code in blocks",
       "D)  code between quotations",
     ],
-    answer: "B)  code between curly braces",
+    answer: "B",
   },
   {
     question:
@@ -74,7 +73,7 @@ var questionArray = [
       "C)  declaration",
       "D)  pseudocode",
     ],
-    answer: "D)  pseudocode",
+    answer: "D",
   },
   {
     question: "What is a data structure designed to store data?",
@@ -84,6 +83,6 @@ var questionArray = [
       "C)  primitive data",
       "D)  arguments",
     ],
-    answer: "A)  array",
+    answer: "A",
   },
 ];
